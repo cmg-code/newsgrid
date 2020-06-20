@@ -1,0 +1,279 @@
+/*
+ * Kaltura Player theme.
+ * Hard overrides for default Kaltura player styles,
+ * requires `!important` for every selector.
+ */
+
+.closedCaptions,
+.sourceSelector {
+}
+
+@media only screen and (min-width: 420px) {
+  .sourceSelector button {
+    color: white !important;
+  }
+
+  .sourceSelector {
+    position: absolute !important;
+    top: 62px !important;
+    right: 53px !important;
+  }
+
+  .closedCaptions {
+    position: absolute !important;
+    right: 110px !important;
+    top: 62px !important;
+  }
+
+  .closedCaptions button {
+    color: white !important;
+  }
+
+  .btn.icon-play,
+  .btn.playPauseBtn {
+    background-color: white !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 40px !important;
+    position: relative;
+    left: 10px;
+    bottom: -55px;
+    display: block !important;
+  }
+
+  .playbackRateSelector {
+    position: absolute !important;
+    right: 80px !important;
+    top: 60px;
+  }
+
+  .playbackRateSelector .btn {
+    color: white !important;
+  }
+
+  .largePlayBtn {
+    border-radius: 60px !important;
+    width: 60px !important;
+    height: 60px !important;
+    padding: 0 !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .largePlayBtn:before {
+    position: relative;
+    left: 15px;
+    top: 10px;
+  }
+
+  .largePlayBtn:hover {
+    color: rgba(1, 140, 140, 0.8) !important;
+  }
+
+  .btn.fullScreenBtn {
+    color: white !important;
+    margin-right: 15px !important;
+    margin-top: 20px !important;
+    height: 30px !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 5px;
+  }
+
+  .btn.icon-play:before {
+    position: relative;
+    top: 1px;
+    left: 2px;
+  }
+
+  .btn {
+    text-shadow: 0 0 0 transparent !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    outline: 0 !important;
+    height: auto !important;
+  }
+
+  .volumeControl .btn {
+    color: white !important;
+    position: relative !important;
+    top: 63px !important;
+  }
+
+  .btn:hover {
+    color: rgba(1, 140, 140, 0.8) !important;
+  }
+
+  .currentTimeLabel {
+    width: 4.1em;
+    overflow: hidden;
+    padding-left: 0 !important;
+    margin-left: -4em !important;
+    text-align: right;
+  }
+
+  .durationLabel {
+    color: white !important;
+  }
+
+  .videoHolder {
+    height: 100% !important;
+  }
+
+  .scrubber,
+  .controlsContainer {
+    opacity: 0 !important;
+    transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out;
+  }
+
+  .mwPlayerContainer:hover .controlsContainer,
+  .mwPlayerContainer:active .controlsContainer,
+  .mwPlayerContainer:focus .controlsContainer,
+  .mwPlayerContainer:hover .scrubber,
+  .mwPlayerContainer:active .scrubber,
+  .mwPlayerContainer:focus .scrubber {
+    opacity: 1 !important;
+  }
+
+  .controlsContainer {
+    position: relative !important;
+    height: 8em !important;
+    background-color: transparent !important;
+    box-shadow: 0 0 0 transparent !important;
+    border: none !important;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.6) 100%) !important;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.6) 100%) !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.6) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ) !important;
+  }
+
+  .watched {
+    border-radius: 20px !important;
+    background-color: rgba(1, 140, 140, 0.8) !important;
+  }
+
+  .buffered {
+    background: rgba(255, 255, 255, 0.8) !important;
+    opacity: 0 !important;
+    border-radius: 20px !important;
+  }
+
+  .scrubber .handle-wrapper {
+    margin: 0 !important;
+  }
+
+  .scrubber .playHead {
+    background: #00adad !important;
+    top: -4px !important;
+    height: 16px !important;
+  }
+
+  .volumeControl .ui-slider-horizontal.slider,
+  .volumeControl.open .ui-slider-horizontal.slider {
+    width: 100% !important;
+    border-radius: 20px !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+  }
+
+  .volumeControl .ui-slider-horizontal.slider {
+    top: 45px !important;
+    margin-left: 2.5em !important;
+  }
+
+  .volumeControl .ui-slider-horizontal .ui-slider-range-min {
+    border-radius: 20px !important;
+    background: rgba(1, 140, 140, 0.8) !important;
+    box-shadow: 0 0 0 transparent !important;
+    opacity: 1 !important;
+  }
+
+  .volumeControl {
+    position: absolute !important;
+    left: 63% !important;
+    width: 20% !important;
+    bottom: 0 !important;
+    display: inline-block !important;
+  }
+
+  .scrubber {
+    width: 51% !important;
+    position: absolute !important;
+    left: 50px !important;
+    bottom: 30px !important;
+    border-radius: 15px !important;
+    margin-top: 5em !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    z-index: 1;
+  }
+
+  .timers {
+    position: absolute !important;
+    left: 58% !important;
+    bottom: 20px !important;
+    top: auto !important;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 1600px) {
+  .scrubber {
+    width: 47% !important;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 1250px) {
+  .volumeControl {
+    width: 17% !important;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 840px) {
+  .scrubber {
+    width: 40% !important;
+  }
+
+  .timers {
+    left: 52% !important;
+  }
+
+  .volumeControl {
+    left: 58% !important;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 740px) {
+  .scrubber {
+    width: 25% !important;
+  }
+
+  .timers {
+    left: 43% !important;
+  }
+
+  .volumeControl {
+    left: 53% !important;
+    width: 12% !important;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 480px) {
+  .scrubber {
+    width: 20% !important;
+  }
+
+  .timers {
+    left: 43% !important;
+  }
+
+  .volumeControl {
+    left: 53% !important;
+    width: 8% !important;
+  }
+
+  .playbackRateSelector .btn {
+    margin-right: 0px !important;
+  }
+
+  .btn.fullScreenBtn {
+    margin-right: 5px !important;
+  }
+}
